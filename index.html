@@ -1,17 +1,65 @@
 <html>
-    <title>Kominfo HMTKBG</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <head>
+        <title>Kominfo HMTKBG</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+        <meta http-equiv = "refresh" content = "5; url = https://docs.google.com/forms/d/e/1FAIpQLSdwiCEFiKKPrz7xuvDIpcm1B50VrorwvOksMk4OUj23kbL7vg/viewform?usp=sf_link" />
+    </head>
 
-        <div id="ff-compose"></div>
-        <script async defer src="https://formfacade.com/include/108003814794705054980/form/1FAIpQLSdwiCEFiKKPrz7xuvDIpcm1B50VrorwvOksMk4OUj23kbL7vg/classic.js?div=ff-compose"></script>
+    <div class="center">
+        <img src="logogram.png" alt="Logogram">
+        <br>
+        Menuju Forms dalam <span id="countdown">5</span> detik
+    </div>
 
-        <style>
-            html *
-            {
-                font-size: 1em !important;
-                color: #000 !important;
-                font-family: Montserrat !important;
-            }
-        </style>
+      <!-- JavaScript part -->
+      <script type="text/javascript">
+          
+          // Total seconds to wait
+          var seconds = 5;
+          
+          function countdown() {
+              seconds = seconds - 1;
+              if (seconds < 0) {
+                  // Chnage your redirection link here
+                  window.location = "https://docs.google.com/forms/d/e/1FAIpQLSdwiCEFiKKPrz7xuvDIpcm1B50VrorwvOksMk4OUj23kbL7vg/viewform?usp=sf_link";
+              } else {
+                  // Update remaining seconds
+                  document.getElementById("countdown").innerHTML = seconds;
+                  // Count down using javascript
+                  window.setTimeout("countdown()", 1000);
+              }
+          }
+          
+          // Run countdown function
+          countdown();
+          
+      </script> 
+   
+   <style>
+
+        img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        html * {
+        font-size: 1em !important;
+        color: #000 !important;
+        font-family: Montserrat !important; 
+        }
+        
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+
+        center {
+            margin: 0 auto;
+            max-width: 600px;
+            position: absolute;
+            bottom: 0;
+        }
+
+    </style>
 </html>
