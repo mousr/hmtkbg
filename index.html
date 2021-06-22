@@ -3,29 +3,53 @@
         <title>Repo Kominfo HMTKBG</title>
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-        <meta http-equiv = "refresh" content = "60; url = https://docs.google.com/forms/d/e/1FAIpQLSfycAfXkPV3rg4GJJYBtLDTgxMiuqXc4UA__vlpBnIY7tMuSQ/viewform?usp=sf_link" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <meta http-equiv = "refresh" content = "5; url = https://docs.google.com/forms/d/e/1FAIpQLSdwiCEFiKKPrz7xuvDIpcm1B50VrorwvOksMk4OUj23kbL7vg/viewform?usp=sf_link" />
     </head>
 
-    <body>
-        <br>
-        <br>
     <div class="center">
-        <a href=https://docs.google.com/forms/d/e/1FAIpQLSfycAfXkPV3rg4GJJYBtLDTgxMiuqXc4UA__vlpBnIY7tMuSQ/viewform?usp=sf_link><img src="hanipchan.png" class="rounded mx-auto d-block" alt="Logogram"></a>
         <br>
         <br>
-        <div class="alert alert-primary" role="alert">
-            tekan hanip untuk melanjutkan
-        </div>
+        <img src="logogram.png" alt="Logogram">
+        <br>
+        Mengalihkan . . .
     </div>
 
-    </body>
-    <style>
+      <!-- JavaScript part -->
+      <script type="text/javascript">
+          
+          // Total seconds to wait
+          var seconds = 5;
+          
+          function countdown() {
+              seconds = seconds - 1;
+              if (seconds < 0) {
+                  // Chnage your redirection link here
+                  window.location = "https://docs.google.com/forms/d/e/1FAIpQLSdwiCEFiKKPrz7xuvDIpcm1B50VrorwvOksMk4OUj23kbL7vg/viewform?usp=sf_link";
+              } else {
+                  // Update remaining seconds
+                  document.getElementById("countdown").innerHTML = seconds;
+                  // Count down using javascript
+                  window.setTimeout("countdown()", 1000);
+              }
+          }
+          
+          // Run countdown function
+          countdown();
+          
+      </script> 
+   
+   <style>
 
         img {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        }
+
+        html * {
+        font-size: 20pt !important;
+        color: #000 !important;
+        font-family: Montserrat !important; 
         }
         
         h1 {text-align: center;}
@@ -38,10 +62,6 @@
             position: absolute;
             bottom: 0;
         }
-		
-		body {
-		font-size: 250%;
-		}
 
     </style>
 </html>
